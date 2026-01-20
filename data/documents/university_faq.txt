@@ -1,0 +1,734 @@
+Q: What is NLPAssist+?
+A: NLPAssist+ is a system designed to help students and faculty by answering natural language questions about university courses, documents, and FAQs.
+
+Q: How does NLPAssist+ work?
+A: It uses a Retrieval-Augmented Generation (RAG) approach. It retrieves relevant information from a document collection and uses a Large Language Model (LLM) to generate an answer.
+
+Q: What are the components of NLPAssist+?
+A: It consists of a backend NLP service (Python) handling document ingestion, embeddings, and retrieval, and a frontend application (Web or Mobile) for user interaction.
+
+Q: What is the due date for the project?
+A: The due date is the Last Class.
+
+Q: What is the total marks for this project?
+A: The total marks are 11.
+
+Q: Which CLOs are mapped to this project?
+A: CLO3 is mapped to this project.
+
+Q: What technology is recommended for the backend?
+A: Python (FastAPI or Flask) is recommended for the backend.
+
+Q: What technology is recommended for the frontend?
+A: React, Next.js, or Laravel for web; React Native for mobile.
+
+Q: Can I use LangChain?
+A: LangChain is optional. You are encouraged to understand the steps without it, but you may use it if you prefer.
+
+Q: What should I use for vector storage?
+A: You can use FAISS for local development or detailed vector databases like ChromaDB or Qdrant.
+
+Q: Is security important?
+A: Yes, you must not expose API keys in the frontend and implement basic request validation.
+
+Q: What are the conflicting requirements in WP1?
+A: Students must balance accuracy vs speed, local resources vs model size, and security vs usability.
+ 
+Q: How do I apply for admission? 
+A: You can apply online through the university portal by dragging the 'Admissions' tab and filling out the application form. 
+ 
+Q: What are the library opening hours? 
+A: The main library is open from 8:00 AM to 10:00 PM on weekdays and 9:00 AM to 5:00 PM on weekends. 
+ 
+Q: How can I reset my student portal password? 
+A: Visit the IT Helpdesk website and click on 'Forgot Password'. You will need your student ID and registered email. 
+ 
+Q: Where is the student cafeteria located? 
+A: The main cafeteria is located on the ground floor of Building B, near the central courtyard. 
+ 
+Q: What is the minimum attendance requirement? 
+A: Students are required to maintain a minimum of 75% attendance in all courses to be eligible for final exams. 
+ 
+Q: How do I get a student ID card? 
+A: Visit the Student Affairs office in the Admin Block with your admission letter and a passport-sized photograph. 
+ 
+Q: How do I register for courses? 
+A: Course registration is done online via the student portal during the first week of the semester.
+
+Q: What happens if I miss a deadline for an assignment? 
+A: Late submissions are generally penalized. Check your course outline or contact your instructor for specific policies.
+
+Q: Can I change my major? 
+A: Yes, you can apply for a change of major after the first semester, provided you meet the GPA requirements of the target department.
+
+Q: Is there a gym on campus? 
+A: Yes, the university gym is located in the Sports Complex and is free for all registered students.
+
+Q: How do I access the campus Wi-Fi? 
+A: Use your student ID and password to log in to the 'Uni-Secure' network available across campus.
+
+Q: What are the parking rules? 
+A: Students must obtain a parking sticker from the security office to park in designated student parking areas.
+
+Q: How do I check my grades? 
+A: Grades are posted on the student portal under the 'Academic History' or 'Gradebook' section.
+
+Q: Is there a health center on campus? 
+A: Yes, the University Health Center provides basic medical assistance and is located near the hostels.
+
+Q: How can I join a student club? 
+A: You can sign up for clubs during the 'Club Fair' week or contact the Student Council for a list of active societies.
+
+Q: What is the procedure for freezing a semester? 
+A: Submit a written application to the Registrar's office stating the reason. Fees may apply.
+
+Q: How do I report harassment or bullying? 
+A: The university has a zero-tolerance policy. Report incidents immediately to the Student Affairs office or via the anonymous online reporting tool.
+
+Q: Are guests allowed in the hostels? 
+A: Guests are allowed only in the visitor's lounge during visiting hours (4:00 PM - 8:00 PM). Overnight stays are not permitted.
+
+Q: How do I get an official transcript? 
+A: Apply for a transcript through the Controller of Examinations office. Processing usually takes 5-7 working days.
+
+Q: What constitutes academic dishonesty? 
+A: Plagiarism, cheating in exams, and falsifying data are considered academic dishonesty and can lead to suspension.
+
+Q: Can I use the computer labs after classes? 
+A: Yes, general-purpose computer labs are open until 8:00 PM for student use.
+
+Q: How do I pay my tuition fees? 
+A: Fees can be paid via bank challan at designated branches or through online banking apps linked with the university.
+
+Q: What is the grading scale? 
+A: The university follows a 4.0 GPA scale. A is 4.0, B is 3.0, C is 2.0, and D is 1.0. F is 0.0.
+
+Q: Are internships mandatory? 
+A: For most degree programs, a 6-week summer internship is mandatory for graduation.
+
+Q: How do I book a study room in the library? 
+A: You can book a study room online through the library's website up to 24 hours in advance.
+
+Q: What is the policy on mobile phones in class? 
+A: Mobile phones must be on silent mode. Using them during lectures without permission is prohibited.
+
+Q: Is there a shuttle service? 
+A: Yes, university shuttles ply on specific routes morning and evening. Route maps are available at the transport office.
+
+Q: How do I contact my academic advisor? 
+A: Your advisor's email and office hours are listed on your profile in the student portal.
+
+Q: What happens if I fail a course? 
+A: You must retake the course when it is offered next. Both grades will appear on the transcript, but the new grade calculates into GPA.
+
+Q: Can I drop a course? 
+A: You can drop a course within the first two weeks without penalty. Afterward, a 'W' (Withdrawn) grade will appear.
+
+Q: Is smoking allowed on campus? 
+A: The university is a smoke-free zone. Smoking is strictly prohibited within campus premises.
+
+Q: How do I submit a complaint about a faculty member? 
+A: You can submit a formal complaint to the Head of Department (HoD) or use the feedback forms at the end of the semester.
+
+Q: What are the lab safety rules? 
+A: Lab coats and safety goggles are mandatory in chemistry and biology labs. Food and drink are prohibited.
+
+Q: How can I print documents on campus? 
+A: Printing services are available in the library and computer labs for a nominal charge per page.
+
+Q: Is there a lost and found section? 
+A: Yes, lost items are kept at the Security Office at the main gate.
+
+Q: Can I work part-time on campus? 
+A: Limited Teaching Assistant (TA) and Research Assistant (RA) positions are available for senior students with high GPA.
+
+Q: What is the dress code? 
+A: Students are expected to dress modestly and professionally. Shorts and sleeveless shirts are often not permitted in academic blocks.
+
+Q: How do I access online journals? 
+A: You can access IEEE, JSTOR, and other databases through the university library's digital portal (VPN may be required off-campus).
+
+Q: What is the procedure for a sick leave? 
+A: Email your instructor and submit a medical certificate to the coordination office if missing an exam or major assessment.
+
+Q: Are there counseling services? 
+A: Yes, the university provides free, confidential mental health counseling services at the Student Support Center.
+
+Q: How do I calculate my SGPA? 
+A: SGPA is the sum of (Course Credit Hours x Grade Points) divided by Total Credit Hours for the semester.
+
+Q: What is the Dean's List? 
+A: Students with a GPA of 3.5 or higher in a semester are placed on the Dean's List for academic excellence.
+
+Q: Can I double major? 
+A: Double majors are allowed but require approval from both departments and will extend your degree duration.
+
+Q: How do I apply for graduation? 
+A: In your final semester, submit a 'Degree Clearance Form' to the Registrar's office to ensure all requirements are met.
+
+Q: What is the alumni network? 
+A: The alumni network connects graduates for networking and mentorship. You automatically join upon graduation.
+
+Q: Is there an orientation for new students? 
+A: Yes, orientation is held one week before classes begin to introduce new students to campus life and rules.
+
+Q: How do I update my contact information? 
+A: You can update your phone number and address directly through the 'Profile' section of the student portal.
+
+Q: What if I lose my ID card? 
+A: Report it immediately. A duplicate card can be issued for a fee of $10.
+
+Q: Are there prayer rooms? 
+A: Yes, separate prayer rooms for men and women are available in Building C.
+
+Q: Can I access the library on weekends? 
+A: Yes, the library is open on Saturdays from 9 AM to 5 PM, but closed on Sundays.
+
+Q: Is attendance mandatory for labs? 
+A: Yes, 100% attendance is usually required for lab sessions unless a valid medical reason is provided.
+
+Q1: How do I apply for hostel accommodation?
+A: Hostel applications are submitted online through the student portal after admission confirmation.
+
+Q2: What documents are required for hostel registration?
+A: You need your admission letter, fee voucher, CNIC/B-Form, and two passport-sized photographs.
+
+Q3: Is hostel accommodation guaranteed for all students?
+A: Hostel accommodation is subject to availability and is prioritized for outstation students.
+
+Q4: What are hostel curfew timings?
+A: Hostel curfew is 10:00 PM on weekdays and 11:00 PM on weekends.
+
+Q5: Are meals provided in hostels?
+A: Yes, mess facilities are available, and charges are included in hostel fees.
+
+Q6: Can students change sections after registration?
+A: Section changes are allowed only within the first week with departmental approval.
+
+Q7: How do I access the Learning Management System (LMS)?
+A: Use your university email and password to log in to the LMS portal.
+
+Q8: Are lecture recordings available?
+A: Lecture recordings are available only for selected courses as decided by instructors.
+
+Q9: What is the procedure for course add/drop?
+A: Course add/drop is done through the student portal during the first two weeks of the semester.
+
+Q10: Can I repeat a course to improve my grade?
+A: Yes, students may repeat courses according to academic regulations.
+
+Q11: What is the policy for course prerequisites?
+A: Students must pass prerequisite courses before registering for advanced courses.
+
+Q12: How do I request a course exemption?
+A: Submit an exemption request to the department with transcripts from previous institutions.
+
+Q13: What is the minimum GPA required to continue studies?
+A: Students must maintain a minimum CGPA of 2.0 to avoid academic probation.
+
+Q14: What happens during academic probation?
+A: Students on probation are given limited course load and academic counseling.
+
+Q15: How do I appeal an exam result?
+A: Submit a rechecking request to the Controller of Examinations within the announced deadline.
+
+Q16: Are makeup exams allowed?
+A: Makeup exams are allowed only in genuine cases with supporting documentation.
+
+Q17: How do I get a course outline?
+A: Course outlines are available on the LMS at the start of the semester.
+
+Q18: Can instructors change assessment policies mid-semester?
+A: No, assessment policies must follow the approved course outline.
+
+Q19: What is the policy for plagiarism?
+A: Any plagiarism above the allowed threshold results in disciplinary action.
+
+Q20: What software is available in computer labs?
+A: Labs provide academic software such as MATLAB, SPSS, Python, and MS Office.
+
+Q21: Can students use personal laptops in labs?
+A: Personal laptops are allowed but must not disrupt lab activities.
+
+Q22: How do I reserve lab equipment?
+A: Equipment reservations must be approved by the lab supervisor.
+
+Q23: Are lab manuals provided?
+A: Lab manuals are shared by instructors or available on the LMS.
+
+Q24: What is the attendance policy for lectures?
+A: Students must attend at least 75% of lectures to qualify for exams.
+
+Q25: Is attendance counted for quizzes?
+A: Yes, attendance during quizzes is mandatory unless excused.
+
+Q26: How do I apply for a scholarship?
+A: Scholarship applications are submitted through the Financial Aid Office.
+
+Q27: What types of scholarships are offered?
+A: Merit-based, need-based, and sports scholarships are available.
+
+Q28: Can scholarships be revoked?
+A: Yes, scholarships may be revoked if academic performance drops.
+
+Q29: Is financial aid available for continuing students?
+A: Yes, eligible students may apply each academic year.
+
+Q30: How do I request fee installment plans?
+A: Submit an application to the Accounts Office before the fee deadline.
+
+Q31: What happens if fees are paid late?
+A: Late fee penalties apply, and access to services may be restricted.
+
+Q32: Can fees be refunded?
+A: Fee refunds are subject to the university refund policy.
+
+Q33: How do I access career counseling services?
+A: Career counseling appointments can be booked through the Career Development Office.
+
+Q34: Are job placement services available?
+A: Yes, the university assists students through job fairs and employer networking.
+
+Q35: Can alumni access career services?
+A: Alumni may access limited career services upon request.
+
+Q36: What extracurricular activities are available?
+A: Sports, debating, arts, and technical societies are active on campus.
+
+Q37: Are sports facilities free for students?
+A: Most sports facilities are free for registered students.
+
+Q38: How do I participate in inter-university competitions?
+A: Register through the Sports Office or respective society.
+
+Q39: Is medical insurance provided to students?
+A: Basic medical coverage is available through the Health Center.
+
+Q40: How do I schedule a medical appointment on campus?
+A: Walk-in appointments are accepted during clinic hours.
+
+Q41: Are emergency medical services available?
+A: Yes, emergency support is available during campus hours.
+
+Q42: What is the campus emergency contact number?
+A: Emergency contact numbers are posted across campus and on the website.
+
+Q43: How do I file a disciplinary appeal?
+A: Appeals must be submitted to the Disciplinary Committee in writing.
+
+Q44: What behaviors result in disciplinary action?
+A: Misconduct, harassment, cheating, and vandalism are punishable offenses.
+
+Q45: Are CCTV cameras installed on campus?
+A: Yes, CCTV surveillance is used for security purposes.
+
+Q46: Can students organize events on campus?
+A: Events require prior approval from Student Affairs.
+
+Q47: Is permission required for posters and banners?
+A: Yes, unauthorized postings are not allowed.
+
+Q48: Are classrooms accessible for students with disabilities?
+A: The university provides accessibility support where possible.
+
+Q49: How do I request special exam arrangements?
+A: Submit a request with medical documentation to the Exams Office.
+
+Q50: What is the procedure for name correction on records?
+A: Name correction requests must be submitted with official documents.
+
+Q51: Can students access academic records after graduation?
+A: Yes, alumni can request records through the Registrar.
+
+Q52: Are email announcements mandatory to read?
+A: Yes, official university communication is sent via email.
+
+Q53: How do I activate my university email?
+A: Email credentials are issued after enrollment confirmation.
+
+Q54: What is the policy on classroom behavior?
+A: Respectful conduct is expected at all times.
+
+Q55: Are guest lectures part of coursework?
+A: Guest lectures may be included as part of course activities.
+
+Q56: Can I switch from morning to evening program?
+A: Program switching is subject to availability and approval.
+
+Q57: What is the maximum course load per semester?
+A: The maximum load is defined by the academic regulations.
+
+Q58: How do I submit a final year project proposal?
+A: Proposals are submitted to the department during the announced timeline.
+
+Q59: Is industry supervision allowed for projects?
+A: Industry co-supervision may be allowed with approval.
+
+Q60: Are project defenses mandatory?
+A: Yes, final project defense is compulsory.
+
+Q61: How are project grades evaluated?
+A: Grades are based on proposal, implementation, report, and defense.
+
+Q62: Can students access labs during weekends?
+A: Weekend lab access depends on department policy.
+
+Q63: Is attendance required during seminars?
+A: Seminar attendance may be mandatory for certain courses.
+
+Q64: How do I submit internship reports?
+A: Internship reports are submitted to the department coordinator.
+
+Q65: Are internships graded?
+A: Yes, internships are evaluated and carry credit hours.
+
+Q66: What is the policy for internship placement?
+A: Students may arrange placements independently or through the university.
+
+Q67: Can international students work on campus?
+A: On-campus work is allowed subject to visa regulations.
+
+Q68: How do I extend my degree duration?
+A: Degree extension requests must be approved by the academic council.
+
+Q69: What happens if I exceed the maximum duration?
+A: Exceeding duration may result in program termination.
+
+Q70: How do I submit feedback about facilities?
+A: Feedback can be submitted through the university portal.
+
+Q71: Are suggestion boxes available?
+A: Yes, suggestion boxes are placed in academic blocks.
+
+Q72: Can students access faculty offices without appointments?
+A: Faculty can be visited during office hours.
+
+Q73: What is the policy on class rescheduling?
+A: Rescheduling is announced by the instructor via official channels.
+
+Q74: How do I report technical issues with LMS?
+A: Contact the IT Helpdesk with screenshots and details.
+
+Q75: Are cloud storage services provided?
+A: Students receive limited cloud storage via university email.
+
+Q76: Can students bring guests to campus events?
+A: Guest entry is subject to event-specific rules.
+
+Q77: What is the policy on political activities?
+A: Political activities are restricted on campus.
+
+Q78: Are religious events allowed?
+A: Religious activities are permitted within designated areas.
+
+Q79: How do I access research databases off-campus?
+A: Use the university VPN to access resources remotely.
+
+Q80: Is training provided for research tools?
+A: Workshops are conducted periodically by the library.
+
+Q81: Can students publish research papers?
+A: Students are encouraged to publish under faculty supervision.
+
+Q82: Is ethical approval required for research?
+A: Yes, ethical clearance is mandatory for certain studies.
+
+Q83: How do I join the alumni association?
+A: Membership is automatic upon graduation.
+
+Q84: Are alumni events organized?
+A: Yes, reunions and networking events are held annually.
+
+Q85: Can students access campus after graduation?
+A: Alumni access is limited and requires permission.
+
+Q86: What is the policy on social media conduct?
+A: Misuse affecting the university’s reputation is prohibited.
+
+Q87: How do I update emergency contact details?
+A: Update them through the student portal profile section.
+
+Q88: Are fire drills conducted on campus?
+A: Fire drills are conducted periodically for safety.
+
+Q89: Can students use bicycles on campus?
+A: Bicycles are allowed in designated areas.
+
+Q90: Is there a daycare facility on campus?
+A: Daycare facilities may be available subject to policy.
+
+Q91: How do I access exam schedules?
+A: Exam schedules are posted on the official website.
+
+Q92: Are calculators allowed in exams?
+A: Calculator use depends on course policy.
+
+Q93: What is the policy for exam misconduct?
+A: Any misconduct results in strict disciplinary action.
+
+Q94: Can students request transcript corrections?
+A: Yes, correction requests must be supported by documents.
+
+Q95: How do I apply for exchange programs?
+A: Exchange program applications are handled by the International Office.
+
+Q96: Are exchange credits transferable?
+A: Credit transfer depends on course equivalency.
+
+Q97: Can students defer admission?
+A: Admission deferment may be allowed for valid reasons.
+
+Q98: How do I report lost academic documents?
+A: Report losses to the Registrar for reissuance.
+
+Q99: Is orientation attendance mandatory?
+A: Orientation attendance is strongly recommended.
+
+Q100: Who do I contact for general inquiries?
+A: Contact the Student Affairs or Registrar’s office.
+
+Q: How do I request a course withdrawal after the deadline?
+A: Late withdrawal requests require approval from the department and valid justification.
+
+Q: Are online classes counted toward attendance?
+A: Yes, attendance for online classes is counted according to university policy.
+
+Q: Can I attend classes of another section?
+A: Attending another section is not allowed without instructor permission.
+
+Q: What is the process for upgrading my academic status?
+A: Academic status upgrades are reviewed after each semester based on CGPA.
+
+Q: How do I obtain a bonafide certificate?
+A: Apply for a bonafide certificate through the Registrar’s office or student portal.
+
+Q: Are midterm exam dates fixed?
+A: Midterm schedules are announced by the department and may vary by course.
+
+Q: Can I change my exam center?
+A: Exam center changes are not allowed except in exceptional cases.
+
+Q: What should I do if I miss an exam due to illness?
+A: Inform your instructor immediately and submit a medical certificate.
+
+Q: How do I apply for a re-sit exam?
+A: Re-sit exam applications must be submitted to the Exams Office within the deadline.
+
+Q: Is class participation graded?
+A: Participation grading depends on the course assessment policy.
+
+Q: Are group projects mandatory?
+A: Group projects are included based on course requirements.
+
+Q: How do I find my classroom location?
+A: Classroom details are available on the timetable and student portal.
+
+Q: Can students record lectures?
+A: Lecture recording is allowed only with instructor permission.
+
+Q: What is the policy on late arrivals to class?
+A: Late arrivals may be marked absent depending on instructor policy.
+
+Q: How do I submit an assignment online?
+A: Assignments are submitted through the LMS before the deadline.
+
+Q: Are handwritten assignments accepted?
+A: Acceptance of handwritten assignments depends on instructor guidelines.
+
+Q: How are quizzes announced?
+A: Quiz announcements are made via LMS or in class.
+
+Q: Can quizzes be retaken?
+A: Quiz retakes are generally not allowed.
+
+Q: How do I check my attendance record?
+A: Attendance records are available on the student portal.
+
+Q: What happens if attendance falls below requirement?
+A: Students may be barred from appearing in final exams.
+
+Q: How do I request a change in exam date?
+A: Exam date changes are not permitted except for emergencies.
+
+Q: Are calculators allowed in math exams?
+A: Calculator usage depends on exam instructions.
+
+Q: What is the policy for open-book exams?
+A: Open-book exam rules are specified by the instructor.
+
+Q: Can I appeal a disciplinary decision?
+A: Yes, appeals can be submitted to the disciplinary committee.
+
+Q: How do I apply for a leave of absence?
+A: Submit a leave application to the department with supporting documents.
+
+Q: Are leaves counted against attendance?
+A: Approved leaves may be exempted from attendance penalties.
+
+Q: Can I defer a semester due to personal reasons?
+A: Semester deferment requires formal approval from the Registrar.
+
+Q: What is the process for academic advising?
+A: Academic advising sessions are scheduled by departments.
+
+Q: How do I book a meeting with my advisor?
+A: Use the advisor’s office hours or email for appointments.
+
+Q: Are advisors assigned automatically?
+A: Yes, advisors are assigned by the department.
+
+Q: Can I change my academic advisor?
+A: Advisor changes are allowed under valid reasons.
+
+Q: How do I submit course feedback?
+A: Course feedback is submitted online at the end of the semester.
+
+Q: Is feedback anonymous?
+A: Yes, student feedback is collected anonymously.
+
+Q: What happens to feedback after submission?
+A: Feedback is reviewed by academic management for improvement.
+
+Q: Are attendance sheets shared with students?
+A: Attendance summaries may be shared on the portal.
+
+Q: Can I access past exam papers?
+A: Past papers may be available through the department.
+
+Q: How do I prepare for comprehensive exams?
+A: Guidelines are provided by the department before exams.
+
+Q: Are make-up classes conducted?
+A: Make-up classes are arranged if regular classes are missed.
+
+Q: How do I check my academic warnings?
+A: Academic warnings are displayed on the student portal.
+
+Q: Can academic warnings be removed?
+A: Warnings may be removed after academic improvement.
+
+Q: What is the role of the examination controller?
+A: The controller oversees exams, results, and transcripts.
+
+Q: Are results published online?
+A: Yes, results are published on the student portal.
+
+Q: How do I report errors in my result?
+A: Report errors to the Exams Office immediately.
+
+Q: Can grades be changed after publication?
+A: Grade changes are allowed only after formal verification.
+
+Q: How do I request a duplicate degree?
+A: Apply to the Controller of Examinations with required documents.
+
+Q: Is attendance mandatory for tutorials?
+A: Tutorial attendance may be mandatory depending on the course.
+
+Q: Can students sit in on extra lectures?
+A: Extra lectures require instructor permission.
+
+Q: How do I access department notices?
+A: Notices are posted on department boards and portals.
+
+Q: What is the policy on lab absences?
+A: Lab absences require makeup sessions or may result in penalties.
+
+Q: Can labs be repeated if missed?
+A: Repeating labs depends on instructor approval.
+
+Q: How do I submit a lab report?
+A: Lab reports are submitted as instructed by the lab instructor.
+
+Q: Are lab grades separate from theory?
+A: Yes, lab and theory are graded separately.
+
+Q: Can I switch elective courses?
+A: Elective changes are allowed during the add/drop period.
+
+Q: What happens if an elective is full?
+A: Students may select an alternative elective.
+
+Q: Are evening classes available?
+A: Evening classes are offered for selected programs.
+
+Q: Can students attend workshops?
+A: Workshops are open to registered students.
+
+Q: How do I register for seminars?
+A: Seminar registration details are announced by departments.
+
+Q: Is attendance required for seminars?
+A: Seminar attendance may be mandatory.
+
+Q: Can students earn certificates from workshops?
+A: Certificates may be issued upon completion.
+
+Q: How do I apply for student exchange programs?
+A: Applications are handled by the International Office.
+
+Q: Are exchange students graded locally?
+A: Exchange grading follows host institution rules.
+
+Q: Can exchange credits count toward degree?
+A: Credit transfer depends on approval.
+
+Q: How do I submit a grievance?
+A: Grievances can be submitted to Student Affairs.
+
+Q: Is there a deadline for grievances?
+A: Grievances should be submitted within the announced timeframe.
+
+Q: How do I access academic calendars?
+A: Academic calendars are available on the university website.
+
+Q: Are academic calendars subject to change?
+A: Yes, calendars may be revised with notice.
+
+Q: How do I update my profile photo?
+A: Profile photos can be updated through the portal.
+
+Q: Is the student portal accessible off-campus?
+A: Yes, the portal can be accessed online.
+
+Q: What should I do if the portal is not working?
+A: Report issues to the IT Helpdesk.
+
+Q: Are IT services available on weekends?
+A: Limited IT support may be available.
+
+Q: How do I request technical training?
+A: Training requests can be submitted to IT services.
+
+Q: Are student IDs required for campus entry?
+A: Yes, ID cards must be shown at entry points.
+
+Q: What happens if I forget my ID card?
+A: Temporary access may be granted after verification.
+
+Q: Can parents contact the university?
+A: Parents may contact administration for general inquiries.
+
+Q: Is parental access allowed to student records?
+A: Student records are confidential and protected.
+
+Q: How do I check notices during semester breaks?
+A: Notices are posted on the website and email.
+
+Q: Are online portals active during holidays?
+A: Yes, portals remain accessible.
+
+Q: Can students submit documents online?
+A: Many administrative documents can be submitted online.
+
+Q: How do I know if my document is approved?
+A: Approval status is shown on the portal.
+
+Q: Who handles student complaints?
+A: Complaints are handled by Student Affairs.
+
+Q: Is there a student code of conduct?
+A: Yes, all students must follow the code of conduct.
+
+Q: Where can I find university policies?
+A: Policies are published on the official website.
