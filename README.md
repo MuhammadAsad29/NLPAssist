@@ -4,7 +4,7 @@
 
 ## Overview
 
-NLPAssist is a local university FAQ chatbot project developed as a CCP (Capstone Course Project). It combines **Retrieval-Augmented Generation (RAG)** with a local language model to answer university-related questions accurately and in a natural tone.
+NLPAssist is a local university FAQ chatbot project developed as a CCP. It combines **Retrieval-Augmented Generation (RAG)** with a local language model to answer university-related questions accurately and in a natural tone.
 
 - **Retrieval:** MiniLM embeddings + FAISS vector search over FAQ dataset.
 - **Generation:** Local LLM (TinyLlama) generates answers from retrieved context.
